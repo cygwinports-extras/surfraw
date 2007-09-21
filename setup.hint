@@ -1,0 +1,9 @@
+category: Web
+requires: bash perl perl-HTML-Parser perl-WWW-OpenSearch perl-libwww-perl screen lynx
+sdesc: "Command-line search engine interface"
+ldesc: "Surfraw provides a fast unix command line interface to a variety 
+of popular WWW search engines and other artifacts of power. It reclaims 
+google, altavista, babelfish, dejanews, freshmeat, research index, 
+slashdot and many others from the lands of html-forms, placing these 
+wonders where they belong, deep in unix heartland, as extensions to the 
+shell."

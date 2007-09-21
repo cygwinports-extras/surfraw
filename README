@@ -1,0 +1,235 @@
+surfraw
+------------------------------------------
+Surfraw provides a fast unix command line interface to a variety of 
+popular WWW search engines and other artifacts of power. It reclaims 
+google, altavista, babelfish, dejanews, freshmeat, research index, 
+slashdot and many others from the lands of html-forms, placing these 
+wonders where they belong, deep in unix heartland, as extensions to the 
+shell.
+
+Runtime requirements:
+  bash
+  perl
+  perl-HTML-Parser
+  perl-WWW-OpenSearch
+  perl-libwww-perl
+  screen
+  web browser (e.g. lynx, links, w3m)
+
+Build requirements:
+  cygwin-1.5.24-2
+  cygport-0.3.5-1
+  make-3.81-1
+
+Canonical website:
+  http://surfraw.alioth.debian.org/
+
+Canonical download:
+  http://surfraw.alioth.debian.org/dist/
+
+-------------------------------------------
+
+Build instructions:
+  unpack surfraw-2.2.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./surfraw-2.2.0-X.cygport all
+
+This will create:
+  /usr/src/surfraw-2.2.0-X-src.tar.bz2
+  /usr/src/surfraw-2.2.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/surfraw.bookmarks
+  /etc/surfraw.conf
+  /usr/bin/opensearch-discover
+  /usr/bin/opensearch-genquery
+  /usr/bin/sr
+  /usr/bin/surfraw
+  /usr/bin/surfraw-update-path
+  /usr/lib/surfraw/W
+  /usr/lib/surfraw/alioth
+  /usr/lib/surfraw/altavista
+  /usr/lib/surfraw/amazon
+  /usr/lib/surfraw/archpkg
+  /usr/lib/surfraw/ask
+  /usr/lib/surfraw/austlii
+  /usr/lib/surfraw/bbcnews
+  /usr/lib/surfraw/cddb
+  /usr/lib/surfraw/cia
+  /usr/lib/surfraw/cite
+  /usr/lib/surfraw/cnn
+  /usr/lib/surfraw/codesearch
+  /usr/lib/surfraw/ctan
+  /usr/lib/surfraw/currency
+  /usr/lib/surfraw/cve
+  /usr/lib/surfraw/debbugs
+  /usr/lib/surfraw/debcontents
+  /usr/lib/surfraw/deblists
+  /usr/lib/surfraw/deblogs
+  /usr/lib/surfraw/debpackages
+  /usr/lib/surfraw/debpts
+  /usr/lib/surfraw/debsec
+  /usr/lib/surfraw/debwiki
+  /usr/lib/surfraw/deja
+  /usr/lib/surfraw/discogs
+  /usr/lib/surfraw/dmoz
+  /usr/lib/surfraw/ebay
+  /usr/lib/surfraw/etym
+  /usr/lib/surfraw/excite
+  /usr/lib/surfraw/fast
+  /usr/lib/surfraw/filesearching
+  /usr/lib/surfraw/foldoc
+  /usr/lib/surfraw/freebsd
+  /usr/lib/surfraw/freedb
+  /usr/lib/surfraw/freshmeat
+  /usr/lib/surfraw/fsfdir
+  /usr/lib/surfraw/genpkg
+  /usr/lib/surfraw/google
+  /usr/lib/surfraw/gutenberg
+  /usr/lib/surfraw/happypenguin
+  /usr/lib/surfraw/imdb
+  /usr/lib/surfraw/ixquick
+  /usr/lib/surfraw/lastfm
+  /usr/lib/surfraw/leodict
+  /usr/lib/surfraw/musicbrainz
+  /usr/lib/surfraw/netbsd
+  /usr/lib/surfraw/openbsd
+  /usr/lib/surfraw/opensearch
+  /usr/lib/surfraw/pgpkeys
+  /usr/lib/surfraw/port
+  /usr/lib/surfraw/pubmed
+  /usr/lib/surfraw/rae
+  /usr/lib/surfraw/rfc
+  /usr/lib/surfraw/rhyme
+  /usr/lib/surfraw/scaleplus
+  /usr/lib/surfraw/scholar
+  /usr/lib/surfraw/scpan
+  /usr/lib/surfraw/slashdot
+  /usr/lib/surfraw/slinuxdoc
+  /usr/lib/surfraw/sourceforge
+  /usr/lib/surfraw/stockquote
+  /usr/lib/surfraw/sundocs
+  /usr/lib/surfraw/sunsolve
+  /usr/lib/surfraw/thesaurus
+  /usr/lib/surfraw/translate
+  /usr/lib/surfraw/w3css
+  /usr/lib/surfraw/w3html
+  /usr/lib/surfraw/w3link
+  /usr/lib/surfraw/w3rdf
+  /usr/lib/surfraw/wayback
+  /usr/lib/surfraw/webster
+  /usr/lib/surfraw/wetandwild
+  /usr/lib/surfraw/wikipedia
+  /usr/lib/surfraw/woffle
+  /usr/lib/surfraw/xxx
+  /usr/lib/surfraw/yahoo
+  /usr/lib/surfraw/yubnub
+  /usr/share/doc/Cygwin/surfraw-2.2.0.README
+  /usr/share/doc/surfraw-2.2.0/AUTHORS
+  /usr/share/doc/surfraw-2.2.0/COPYING
+  /usr/share/doc/surfraw-2.2.0/ChangeLog
+  /usr/share/doc/surfraw-2.2.0/HACKING
+  /usr/share/doc/surfraw-2.2.0/INSTALL
+  /usr/share/doc/surfraw-2.2.0/NEWS
+  /usr/share/doc/surfraw-2.2.0/README
+  /usr/share/doc/surfraw-2.2.0/TODO
+  /usr/share/man/man1/W.1.gz
+  /usr/share/man/man1/alioth.1sr.gz
+  /usr/share/man/man1/altavista.1sr.gz
+  /usr/share/man/man1/amazon.1sr.gz
+  /usr/share/man/man1/archpkg.1sr.gz
+  /usr/share/man/man1/ask.1sr.gz
+  /usr/share/man/man1/austlii.1sr.gz
+  /usr/share/man/man1/bbcnews.1sr.gz
+  /usr/share/man/man1/cddb.1sr.gz
+  /usr/share/man/man1/cia.1sr.gz
+  /usr/share/man/man1/cite.1sr.gz
+  /usr/share/man/man1/cnn.1sr.gz
+  /usr/share/man/man1/codesearch.1sr.gz
+  /usr/share/man/man1/ctan.1sr.gz
+  /usr/share/man/man1/currency.1sr.gz
+  /usr/share/man/man1/cve.1sr.gz
+  /usr/share/man/man1/debbugs.1sr.gz
+  /usr/share/man/man1/debcontents.1sr.gz
+  /usr/share/man/man1/deblists.1sr.gz
+  /usr/share/man/man1/deblogs.1sr.gz
+  /usr/share/man/man1/debpackages.1sr.gz
+  /usr/share/man/man1/debpts.1sr.gz
+  /usr/share/man/man1/debsec.1sr.gz
+  /usr/share/man/man1/debwiki.1sr.gz
+  /usr/share/man/man1/deja.1sr.gz
+  /usr/share/man/man1/discogs.1sr.gz
+  /usr/share/man/man1/dmoz.1sr.gz
+  /usr/share/man/man1/ebay.1sr.gz
+  /usr/share/man/man1/elvi.1sr.gz
+  /usr/share/man/man1/etym.1sr.gz
+  /usr/share/man/man1/excite.1sr.gz
+  /usr/share/man/man1/fast.1sr.gz
+  /usr/share/man/man1/filesearching.1sr.gz
+  /usr/share/man/man1/foldoc.1sr.gz
+  /usr/share/man/man1/freebsd.1sr.gz
+  /usr/share/man/man1/freedb.1sr.gz
+  /usr/share/man/man1/freshmeat.1sr.gz
+  /usr/share/man/man1/fsfdir.1sr.gz
+  /usr/share/man/man1/genpkg.1sr.gz
+  /usr/share/man/man1/google.1sr.gz
+  /usr/share/man/man1/gutenberg.1sr.gz
+  /usr/share/man/man1/happypenguin.1sr.gz
+  /usr/share/man/man1/imdb.1sr.gz
+  /usr/share/man/man1/ixquick.1sr.gz
+  /usr/share/man/man1/lastfm.1sr.gz
+  /usr/share/man/man1/leodict.1sr.gz
+  /usr/share/man/man1/musicbrainz.1sr.gz
+  /usr/share/man/man1/netbsd.1sr.gz
+  /usr/share/man/man1/openbsd.1sr.gz
+  /usr/share/man/man1/opensearch-discover.1.gz
+  /usr/share/man/man1/opensearch-genquery.1.gz
+  /usr/share/man/man1/opensearch.1sr.gz
+  /usr/share/man/man1/pgpkeys.1sr.gz
+  /usr/share/man/man1/port.1sr.gz
+  /usr/share/man/man1/pubmed.1sr.gz
+  /usr/share/man/man1/rae.1sr.gz
+  /usr/share/man/man1/rfc.1sr.gz
+  /usr/share/man/man1/rhyme.1sr.gz
+  /usr/share/man/man1/scaleplus.1sr.gz
+  /usr/share/man/man1/scholar.1sr.gz
+  /usr/share/man/man1/scpan.1sr.gz
+  /usr/share/man/man1/slashdot.1sr.gz
+  /usr/share/man/man1/slinuxdoc.1sr.gz
+  /usr/share/man/man1/sourceforge.1sr.gz
+  /usr/share/man/man1/sr.1.gz
+  /usr/share/man/man1/stockquote.1sr.gz
+  /usr/share/man/man1/sundocs.1sr.gz
+  /usr/share/man/man1/sunsolve.1sr.gz
+  /usr/share/man/man1/surfraw-update-path.1.gz
+  /usr/share/man/man1/surfraw.1.gz
+  /usr/share/man/man1/thesaurus.1sr.gz
+  /usr/share/man/man1/translate.1sr.gz
+  /usr/share/man/man1/w3css.1sr.gz
+  /usr/share/man/man1/w3html.1sr.gz
+  /usr/share/man/man1/w3link.1sr.gz
+  /usr/share/man/man1/w3rdf.1sr.gz
+  /usr/share/man/man1/wayback.1sr.gz
+  /usr/share/man/man1/webster.1sr.gz
+  /usr/share/man/man1/wetandwild.1sr.gz
+  /usr/share/man/man1/wikipedia.1sr.gz
+  /usr/share/man/man1/woffle.1sr.gz
+  /usr/share/man/man1/xxx.1sr.gz
+  /usr/share/man/man1/yahoo.1sr.gz
+  /usr/share/man/man1/yubnub.1sr.gz
+
+------------------
+
+Port Notes:
+
+----- version 2.2.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
