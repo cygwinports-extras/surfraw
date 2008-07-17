@@ -1,0 +1,18 @@
+DESCRIPTION="CLI for many search engines"
+HOMEPAGE="http://surfraw.alioth.debian.org/"
+SRC_URI="http://surfraw.alioth.debian.org/dist/${P}.tar.gz"
+
+# just scripts; no need for autoreconf
+src_compile() {
+	cd ${B}
+	cygconf
+	cygmake
+}
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	insinto /etc/bash_completion.d
+	doins ${PN}-bash-completion
+}
