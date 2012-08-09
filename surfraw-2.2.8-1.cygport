@@ -1,0 +1,27 @@
+CATEGORY="Web"
+SUMMARY="Command-line search engine interface"
+DESCRIPTION="Surfraw provides a fast unix command line interface to a variety
+of popular WWW search engines and other artifacts of power. It reclaims
+google, altavista, babelfish, dejanews, freshmeat, research index,
+slashdot and many others from the lands of html-forms, placing these
+wonders where they belong, deep in unix heartland, as extensions to the
+shell."
+HOMEPAGE="http://surfraw.alioth.debian.org/"
+SRC_URI="http://surfraw.alioth.debian.org/dist/${P}.tar.gz"
+
+REQUIRES="lynx xdg-open"
+
+# just scripts; no need for autoreconf
+src_compile() {
+	cd ${B}
+	cygconf TEXTBROWSER=lynx GRAPHICALBROWSER=xdg-open
+	cygmake
+}
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	insinto /etc/bash_completion.d
+	doins ${PN}-bash-completion
+}
